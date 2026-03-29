@@ -10,7 +10,14 @@
                 "-D",
                 "flag",
                 "-o",
-                "${fileDirname}/.vscode/exe/${fileBasenameNoExtension}.exe"
+                "${fileDirname}/.vscode/exe/${fileBasenameNoExtension}.exe",
+                "-std=c++17",
+                "-I",
+                "D:/OpenCV/include",
+                "-L",
+                "D:/OpenCV/x64/mingw/lib",
+                "-l",
+                "opencv_world4110",
             ],
             "options": {
                 "cwd": "${fileDirname}"
